@@ -1,5 +1,13 @@
 // create a function hello word function
+
 function helloWord() {
-    console.log("helloWords");
-} 
-helloWord() ;
+    return function sayFunction() {
+        return  "Hello Word ! " ;
+    }
+    return sayFunction() ;
+}
+let result = helloWord() ;
+console.log(result());
+
+
+
